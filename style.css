@@ -36,7 +36,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 90vh; /* Slightly smaller than full screen */
+  height: 100vh;
   background: linear-gradient(90deg, #6a11cb, #2575fc);
   color: white;
   text-align: center;
