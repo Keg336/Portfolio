@@ -58,22 +58,24 @@ h1 {
     padding-right: 30px;
   }
   
-  .acheivements-header {
-    background: linear-gradient(-90deg, #b269ff, #5558ff);
-    padding: 20px;
-    font-size: 36px;
-    color: white;
-    width: auto;
-    max-width: 50%;
-    text-align: center;
-    margin: 0;
-    margin-top: 20px;
-    position: relative;
-    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
-    padding-left: 30px; 
-    box-sizing: border-box;
-    margin-left: auto;
-  }
+.acheivements-header {
+  --clip-shape: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+  
+  background: linear-gradient(-90deg, #b269ff, #5558ff);
+  padding: 20px;
+  font-size: 36px;
+  color: white;
+  width: auto;
+  max-width: 50%;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+  position: relative;
+  clip-path: var(--clip-shape);
+  padding-left: 30px; 
+  box-sizing: border-box;
+  margin-left: auto;
+}
   
   .acheivements {
     display: flex;
