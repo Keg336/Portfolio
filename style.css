@@ -49,7 +49,44 @@ h1 {
     align-items: flex-end;
     gap: 20px;
   }
+
+
+    /*About section*/
+
+.about-container {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.about-header {
+  --clip-shape: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
   
+  background: linear-gradient(90deg, #b269ff, #5558ff);
+  padding: 20px;
+  font-size: 36px;
+  color: white;
+  width: auto;
+  max-width: 50%;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+  position: relative;
+  clip-path: var(--clip-shape);
+  padding-right: 30px; 
+  box-sizing: border-box;
+  margin-left: auto;
+}
+  
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+
+
 
     /*Acheivements Section*/
 
@@ -84,7 +121,10 @@ h1 {
     align-items: flex-end;
     width: 100%;
   }
-  
+
+
+    /*Line text*/
+
   .line-text {
     position: relative;
     font-size: 24px;
