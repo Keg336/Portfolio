@@ -81,12 +81,10 @@ header.shrink .header-content {
 header h1 {
   font-size: 100px;
   transition: font-size 0.3s ease, transform 0.3s ease;
-  transform: translateX(0);
 }
 
 header.shrink h1 {
   font-size: 20px;
-  transform: translateX(-450px);
 }
 
 header h2 {
@@ -101,6 +99,48 @@ header.shrink h2 {
   transform: translateY(-20px);
   pointer-events: none;
 }
+
+/*Navigation boxes*/
+
+header .nav-inline {
+  display: none;
+  gap: 15px;
+}
+
+header.shrink .nav-inline {
+  display: flex;
+}
+
+header.shrink .nav-box {
+  display: flex;
+  align-items: center;
+  background-color: #091024;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+  gap: 12px;
+}
+
+header.shrink .nav-box:hover {
+  transform: scale(1.05);
+}
+
+header.shrink .nav-box a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+
+
 
 footer {
   background-color: #040917;
@@ -417,7 +457,6 @@ color: #0c142c;
 .skill-box:hover {
   transform: scale(1.05);
 }
-
 
 /*Screen scaling*/
 
