@@ -308,48 +308,81 @@ a:active {
 }
 
 
-/*Boxes*/
+/* Boxes */
+.hobby-container {
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+padding-left: 30px;
+margin-top: 20px;
+}
 
-/* Default styling for the boxes */
 .hobby-box {
-  display: inline-block;
-  padding: 15px 25px;
-  margin: 10px;
-  border-radius: 12px;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  transition: transform 0.2s, background-color 0.2s;
+display: flex;
+align-items: center;
+background-color: #d1b2ff;
+color: #091024;
+padding: 10px 20px;
+border-radius: 12px;
+font-weight: bold;
+transition: transform 0.2s ease;
+gap: 12px;
 }
 
 /* Individual classes for each box's background color */
-.hobby-box.programming {
-  background-color: #d1b2ff;
-  color: #091024;
+.hobby-box-satisfactory {
+display: flex;
+align-items: center;
+background-color: #f2e2bc;
+color: #091024;
+padding: 10px 20px;
+border-radius: 12px;
+font-weight: bold;
+transition: transform 0.2s ease;
+gap: 12px;
 }
 
-.hobby-box.satisfactory {
-  background-color: #f2e2bc;
-  color: #091024;
+.hobby-box-puzzle {
+display: flex;
+align-items: center;
+background-color: #a8f3d3;
+color: #091024;
+padding: 10px 20px;
+border-radius: 12px;
+font-weight: bold;
+transition: transform 0.2s ease;
+gap: 12px;
 }
 
-.hobby-box.puzzle {
-  background-color: #a8f3d3;
-  color: #091024;
+.hobby-box-celeste {
+display: flex;
+align-items: center;
+background-color: #e4a7b6;
+color: #091024;
+padding: 10px 20px;
+border-radius: 12px;
+font-weight: bold;
+transition: transform 0.2s ease;
+gap: 12px;
 }
 
-.hobby-box.celeste {
-  background-color: #e4a7b6;
-  color: #091024;
+.hobby-box img, .hobby-box-satisfactory img, .hobby-box-puzzle img, .hobby-box-celeste img {
+width: 30px;
+height: 30px;
+object-fit: contain;
 }
 
-.hobby-box.more {
-  background-color: #d1b2ff;
-  color: #091024;
+.hobby-box:hover, .hobby-box-satisfactory:hover, .hobby-box-puzzle:hover, .hobby-box-celeste:hover {
+transform: scale(1.05);
 }
 
-.hobby-box:hover {
-  transform: scale(1.05);
+.hobby-box a, .hobby-box-satisfactory a, .hobby-box-puzzle a, .hobby-box-celeste a {
+color: #091024;
+text-decoration: none;
+}
+
+.hobby-box:hover a, .hobby-box-satisfactory:hover a, .hobby-box-puzzle:hover a, .hobby-box-celeste:hover a {
+color: #0c142c;
 }
 
 
@@ -383,4 +416,19 @@ a:active {
 
 .skill-box:hover {
   transform: scale(1.05);
+}
+
+
+/*Screen scaling*/
+
+@media (max-width: 768px) {
+  .hobby-box, .skill-box {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .hobby-box, .skill-box {
+    flex-basis: 100%
+  }
 }
