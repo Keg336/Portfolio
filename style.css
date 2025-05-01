@@ -1,3 +1,13 @@
+@media (max-width: 768px) {
+  h1 { font-size: 40px; }
+  h2 { font-size: 30px; }
+  h4, p { font-size: 18px; }
+  .about-header, .projects-header, .achievements-header {
+    max-width: 90%;
+    font-size: 24px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -93,7 +103,7 @@ header.shrink h2 {
 }
 
 footer {
-  background-color: #34393b;
+  background-color: #040917;
   color: #f0e2ff;
   padding: 1rem;
   text-align: center;
@@ -150,14 +160,14 @@ margin-right: auto;
 
 
 
-  /*Acheivements Section*/
+  /*Achievements Section*/
 
-.acheivements-container {
+.achievements-container {
   text-align: right;
   padding-right: 30px;
 }
 
-.acheivements-header {
+.achievements-header {
 --clip-shape: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
 
 background: linear-gradient(-90deg, #b269ff, #5558ff);
@@ -176,7 +186,7 @@ box-sizing: border-box;
 margin-left: auto;
 }
 
-.acheivements {
+.achievements {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -338,7 +348,39 @@ a:active {
   color: #091024;
 }
 
-/* Hover effect */
 .hobby-box:hover {
+  transform: scale(1.05);
+}
+
+
+
+/*Coding Languages Boxes Clases*/
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-left: 30px;
+  margin-top: 20px;
+}
+
+.skill-box {
+  display: flex;
+  align-items: center;
+  background-color: #d1b2ff;
+  color: #091024;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+  gap: 12px;
+}
+
+.skill-box img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.skill-box:hover {
   transform: scale(1.05);
 }
