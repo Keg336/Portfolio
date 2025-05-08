@@ -104,11 +104,14 @@ header.shrink h2 {
 
 header .nav-inline {
   display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
   gap: 15px;
 }
 
 header.shrink .nav-inline {
   display: flex;
+  opacity: 1;
 }
 
 header.shrink .nav-box {
