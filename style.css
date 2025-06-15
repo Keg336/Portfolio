@@ -48,6 +48,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: #091024;
   color: #f0e2ff;  /*Text Colour*/
   overflow-x: hidden;
