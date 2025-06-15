@@ -460,6 +460,18 @@ transition: transform 0.2s ease;
 gap: 12px;
 }
 
+.hobby-box-sandbox {
+display: flex;
+align-items: center;
+background-color: #cac192;
+color: #091024;
+padding: 10px 20px;
+border-radius: 12px;
+font-weight: bold;
+transition: transform 0.2s ease;
+gap: 12px;
+}
+
 .hobby-box-celeste {
 display: flex;
 align-items: center;
@@ -472,22 +484,22 @@ transition: transform 0.2s ease;
 gap: 12px;
 }
 
-.hobby-box img, .hobby-box-satisfactory img, .hobby-box-puzzle img, .hobby-box-celeste img {
+.hobby-box img, .hobby-box-satisfactory img, .hobby-box-puzzle img, .hobby-box-celeste img, .hobby-box-sandbox img {
 width: 30px;
 height: 30px;
 object-fit: contain;
 }
 
-.hobby-box:hover, .hobby-box-satisfactory:hover, .hobby-box-puzzle:hover, .hobby-box-celeste:hover {
+.hobby-box:hover, .hobby-box-satisfactory:hover, .hobby-box-puzzle:hover, .hobby-box-celeste:hover, .hobby-box-sandbox:hover {
 transform: scale(1.05);
 }
 
-.hobby-box a, .hobby-box-satisfactory a, .hobby-box-puzzle a, .hobby-box-celeste a {
+.hobby-box a, .hobby-box-satisfactory a, .hobby-box-puzzle a, .hobby-box-celeste a, .hobby-box-sandbox a {
 color: #091024;
 text-decoration: none;
 }
 
-.hobby-box:hover a, .hobby-box-satisfactory:hover a, .hobby-box-puzzle:hover a, .hobby-box-celeste:hover a {
+.hobby-box:hover a, .hobby-box-satisfactory:hover a, .hobby-box-puzzle:hover a, .hobby-box-celeste:hover a, .hobby-box-sandbox:hover a {
 color: #0c142c;
 }
 
