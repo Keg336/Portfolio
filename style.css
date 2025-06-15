@@ -44,7 +44,7 @@ body {
   padding: 0;
   line-height: 1.6;
   padding-top: 30vh;
-  background-image: url("bg.png");
+  background-image: url("images/bg.png");
   background-color: #091024;  /*BG colour*/
   color: #f0e2ff;  /*Text Colour*/
   overflow-x: hidden;
