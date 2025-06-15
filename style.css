@@ -45,17 +45,16 @@ body {
   line-height: 1.6;
   padding-top: 30vh;
   background-image: url("images/bg.png");
-  background-color: #091024;  /*BG colour*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #091024;
   color: #f0e2ff;  /*Text Colour*/
   overflow-x: hidden;
 }
 
 header {
   background: linear-gradient(90deg, #6a11cb, #2575fc);
-  /*background-image: url('images/placeholder.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;*/
   position: fixed;
   top: 0;
   left: 0;
